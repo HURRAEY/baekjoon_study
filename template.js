@@ -1,8 +1,8 @@
 function solve() {
-  let answer = "Hello World!";
+  let answer;
   return answer;
 }
-
+  
 const filePath =
   process.platform === "linux"
     ? "/dev/stdin"
@@ -12,7 +12,6 @@ const input = require("fs")
   .toString()
   .trim()
   .split("\n")
-  .map((row) => row.split(" "));
-// .map((num) => Number(num))
+  .map((row) => row.split(" ").map((num) => +num));
 
 console.log(solve());
