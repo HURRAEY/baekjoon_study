@@ -1,4 +1,4 @@
-function solve() {
+function solve(input) {
   let answer;
   return answer;
 }
@@ -12,6 +12,6 @@ const input = require("fs")
   .toString()
   .trim()
   .split("\n")
-  .map((row) => row.split(" ").map((num) => +num));
+  .map((row) => row.split(" "));
 
-console.log(solve());
+console.log(solve(input));
